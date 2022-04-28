@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function trocarImagem(){
+        var element = document.getElementById("myimage");
+        if(element.src.match("apagada")){
+            element.src="luz-acesa.jpg";
+        } else{
+            element.src="luz-apagada.jpg";
+        }
+    }
+</script>
+
+    <p><img  id="myimage" src="luz-apagada.jpg" onclick="trocarImagem();"></p>
+    
+    
+</body>
+
+</html>
