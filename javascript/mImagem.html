@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img#imagem{
+        width: 300px; height: 250px;
+    }
+</style>
+<body>
+    <script>
+        var cont = 1;
+        setInterval(mudarImagem,300);
+
+        function mudarImagem(){
+            var elemento = document.getElementById("imagem");
+            if(cont == 1){
+                elemento.src = "classica.jpg";
+            }
+            if(cont == 2){
+                elemento.src = "90.jpg";
+            }
+            if(cont == 3){
+                elemento.src = "eletronica.jpg";
+            }
+            if(cont == 4){
+                elemento.src = "mpb.jpg";
+            }
+            if(cont == 5){
+                elemento.src = "sertanejo.jpg";
+                cont = 1;
+            }
+            cont++;
+        }
+
+    </script>
+
+    <img id="imagem" src="90.jpg">
+</body>
+</html>
